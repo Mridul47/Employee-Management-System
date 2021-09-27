@@ -8,7 +8,7 @@ class details  implements ActionListener{
 
     JFrame f;
     JLabel l1,l2;
-    JButton b1,b2,b3,b4;
+    JButton b1,b2,b3;
 
     details(){
         f=new JFrame("Employee Detail");
@@ -47,11 +47,7 @@ class details  implements ActionListener{
         b3.addActionListener(this);
         l1.add(b3);
 
-        b4=new JButton("Update");
-        b4.setBounds(530,140,100,40);
-        b4.setFont(new Font("serif",Font.BOLD,15));
-        b4.addActionListener(this);
-        l1.add(b4);
+        
 
         f.setVisible(true);
         f.setSize(700,500);
@@ -72,10 +68,7 @@ class details  implements ActionListener{
             f.setVisible(false);
             new Remove_Employee();
         }
-        if(ae.getSource()==b4){
-            f.setVisible(false);
-            new Search_Employee();
-        }
+        
     }
 
     public static void main(String[ ] arg){
