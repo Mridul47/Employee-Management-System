@@ -155,7 +155,7 @@ class Remove_Employee implements ActionListener{
             	.prepareStatement("delete from register where Employee_Id = ?");
                 st1.setString(1, t.getText());
                 st1.executeUpdate();
-                JOptionPane.showMessageDialog(null,"data deleted successfully");
+                JOptionPane.showMessageDialog(null,"data has been deleted successfully");
                 l2.setVisible(false);
                 l3.setVisible(false);
                 l4.setVisible(false);
